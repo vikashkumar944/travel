@@ -1,0 +1,20 @@
+.head {
+    padding: 80px;
+    text-align: center;
+    background-image:url(ire.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+  }
+  /* Increase the font size of the heading */
+  .head h1  {
+    font-size: 40px;
+    text-align:center;
+    text-shadow: 4px 4px 6px #050505;
+    color:white ;
+    
+  }
+  .head p{text-shadow:4px 4px 6px #0a0a0a;
+    color: white;
+  font-size: 25px;}

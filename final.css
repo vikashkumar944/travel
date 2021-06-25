@@ -1,0 +1,111 @@
+* { margin: 0;/* vikash k  ID: 1697549 */
+    padding: 0;
+    box-sizing: border-box;}
+    body {background-color: rgb(186, 231, 231);}
+    #wrapper {max-width: 960px;/* Style the width and height , and background img */
+             min-width: 700px;
+             margin-left: auto;
+             margin-right: auto;
+             width: 80%;
+             background-image:linear-gradient(rgba(1, 36, 32, 0.7),rgba(1, 34, 16, 0.7)),url(aurora1.jpg);
+             background-position: center;
+             background-size: cover;
+             position: relative;}
+
+.header { height: 550px;
+          width: 100%;}
+
+nav { display: flex;
+      padding: 2% 6%;
+      justify-content: space-between;
+      align-items: center;}
+
+nav img { width: 150px;}
+.navlink { flex: 1;
+           text-align: right;}
+/* Style the nav with color and display */
+.navlink  ul li{ list-style: none;
+                display: inline-block;
+                padding: 8px 12px;
+                position: relative; }
+.navlink ul li a{ color: white;
+                 text-decoration: none;
+                  font-size: 20px;
+                text-shadow: 1px 1px 2px; }
+.navlink ul li a:visited{ color:#C2E0F0;}
+.navlink ul li a:hover { color:#9b1c0b;}
+.navlink  ul li:hover::after {width: 100%;}
+.text { width: 90%;
+        color: white;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+.text h1{font-size:50px;
+text-shadow: 4px 4px 6px black; }
+.text p{ margin: 10px 0 40px;
+        font-size: 20px;
+    color:white;}
+
+.row { margin-top: 5%;
+    display: flex;
+     justify-content: space-between;}
+.column {
+        float: right;
+        width: 33.33%;
+        padding: 10px;
+        height: 300px;
+        margin: 20px 20px ;}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}   
+h2 { text-align: center;
+     color: white;
+     text-shadow: 2px 2px 4px black;
+     font-size: 35px;
+   }
+h3 { color: white;
+      text-shadow: 2px 2px 4px black;
+      font-size: 30px;}
+h3 a { text-decoration: none;
+       color:white;}
+
+h3 a:hover {color: rgb(4, 167, 26);}
+
+.footer { background-color: rgb(1, 94, 94);
+    color: white;
+    text-align: center;
+     height: 60px;
+     padding-top: 20px;}
+     
+.media img {width: 50px;
+height: 40px;
+ float: right;
+padding: 5px ;
+margin: 3px;
+position: relative;}
+/* Style the videos with width and position*/
+.clear {float: left;
+  width: 33.33%;
+  padding: 5px;}
+.video::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+@media (max-width: 700px){
+    .text h1{ font-size: 20px;}
+    .navlink ul li {display: block;}
+    .navlink {position: absolute;
+      background:#1d3d2b;
+      height: 100vh;
+    width: 200px;
+    top:0;
+    right: 0;
+    text-align: left;
+z-index: 2;}
+}

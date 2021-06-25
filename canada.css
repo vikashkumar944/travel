@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: dimgrey;
+}
+
+/* Header/logo Title */
+#wrapper { margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  min-width: 700px;
+   max-width: 960px;
+  font-style: italic;}
+#wrapper a img { width: 150px;}
+.header {
+  padding: 80px;
+  text-align: center;
+  background-image:url(can3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+/* Increase the font size of the heading */
+.header h1  {
+  font-size: 40px;
+  text-align:center;
+  text-shadow: 4px 4px 6px #550202;
+  color: #f5f1f0;
+  
+}
+.header p{text-shadow:4px 4px 6px #530202;
+  color: #fffefe;
+font-size: 25px;}
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  float: right;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px black;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  color:#9b1c0b;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  background-color: rgb(219, 224, 224);
+  padding: 20px;
+  clear: both;
+  
+  
+}
+.cana {overflow: auto;
+      background-color: rgb(240, 243, 243);
+      border:1px solid rgb(189, 188, 188);
+      }
+      /* image here */
+.cana img { width: 180px;
+              height: 225px;
+            margin-right:45px;
+            border:1px solid rgb(189, 188, 188);}
+.cana p{ margin-right: 20px;}
+
+.cana h2{ text-shadow:2px 2px 4px rgb(10, 10, 10);}
+.deal { text-align: right;
+        padding: 20px; 
+        }
+.deal a {color: rgb(0, 25, 94);
+font-weight: bold;
+font-size: 20px;}
+.deal a:hover { color: rgb(158, 156, 7) ;}
+/* Footer */
+.footer1 {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  border-top: 1px solid black;
+  width: auto;
+  height: fit-content;
+}
+.media1 img {width: 50px;
+  height: 40px;
+   float: right;
+  padding: 5px ;
+  margin: 3px;
+  position: relative;}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
